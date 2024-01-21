@@ -58,7 +58,7 @@ public class AttendanceDetails2 extends AppCompatActivity {
     private ImageView imageStudent1;
     private LinearLayout viewAllqrcode;
 
-    private CardView cardViewAttendance;
+    private CardView cardViewAttendance, cardViewCamera;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -79,6 +79,7 @@ public class AttendanceDetails2 extends AppCompatActivity {
         imageStudent1 = findViewById(R.id.image_student);
         imageStudent1.setVisibility(View.GONE);
         cardViewAttendance = findViewById(R.id.qrcode);
+        cardViewCamera = findViewById(R.id.btn_camera);
         Intent intent = getIntent();
         Bundle bundle = intent.getExtras();
         selected_course =  bundle.getString("haha");
@@ -193,6 +194,13 @@ public class AttendanceDetails2 extends AppCompatActivity {
                 Log.e("Bello","course: " +  name.getText());
                 intent.putExtra("mssv", saveUser.getStudent(getApplicationContext()).getId());
                 intent.putExtra("name", saveUser.getStudent(getApplicationContext()).getName());
+                startActivity(intent);
+            }
+        });
+        cardViewCamera.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(AttendanceDetails2.this, CameraAttendanceActivity.class);
                 startActivity(intent);
             }
         });
