@@ -32,7 +32,7 @@ import java.util.List;
 
 import xyz.hasnat.sweettoast.SweetToast;
 
-public class EditCourseActivity extends AppCompatActivity {
+public class EditCourseActivity extends AppCompatActivity2 {
     private Spinner courseBatchSp;
     private Spinner courseTeacherSp,courseTitleSP;
     private EditText courseCodeET;
