@@ -32,7 +32,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class AttendanceDetails extends AppCompatActivity {
+public class AttendanceDetails extends AppCompatActivity2 {
 
     private TextView presentTV, absentTV, name, id, daypresent, daysbsent;
     private Button button;

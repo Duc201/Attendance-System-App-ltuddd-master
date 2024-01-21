@@ -39,7 +39,7 @@ import java.util.List;
 
 import xyz.hasnat.sweettoast.SweetToast;
 
-public class CourseListActivity extends AppCompatActivity implements ItemTouchHelperListener {
+public class CourseListActivity extends AppCompatActivity2 implements ItemTouchHelperListener {
    private FloatingActionButton addCourseButton;
    private RecyclerView courseRv;
    private String intented_dept,intented_Shift;

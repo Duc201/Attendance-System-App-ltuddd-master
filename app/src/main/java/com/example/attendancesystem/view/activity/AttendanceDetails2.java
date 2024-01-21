@@ -37,7 +37,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class AttendanceDetails2 extends AppCompatActivity {
+public class AttendanceDetails2 extends AppCompatActivity2 {
     private Button showAttendanceBtn;
     private String courses;
     private String course_code;
